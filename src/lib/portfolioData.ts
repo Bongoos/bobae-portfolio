@@ -96,7 +96,7 @@ export const toolsData: ToolItem[] = [
   { name: 'After Effects', icon: 'Ae', color: '#00005B', textColor: '#9999FF', iconUrl: TOOL_ICONS.ae },
   { name: 'Figma', icon: 'Figma', color: '#1E1E1E', textColor: '#FFFFFF', iconUrl: TOOL_ICONS.figma },
   { name: 'Nanobanana', icon: 'NB', color: '#1A1A1A', textColor: '#FFD700', iconUrl: TOOL_ICONS.nanobanana },
-  { name: 'Kling AI', iconUrl: 'https://www.klingai.com/favicon.ico' },
+  { name: 'Kling AI', icon: 'KL' , color: '#1A1A1A' , textColor: '#FFD700' , iconUrl: TOOL_ICONS.kling },
 ];
 
 // CDN URLs — 기존 썸네일
