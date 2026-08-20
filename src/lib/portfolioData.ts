@@ -1,4 +1,5 @@
 import klingIcon from '@/assets/kling.png';
+import ontheAiThumb from '@/assets/onthe-ai-thumb.png';
 /*
  * Portfolio Data — 이보배 포트폴리오
  * Design: Editorial Minimalism — Pretendard only
@@ -131,7 +132,7 @@ const ASSETS = {
 export const coverImage = PAGE.p01;
 
 /*
- * Portfolio Projects — 순서 (12개):
+ * Portfolio Projects — 순서 (13개):
  * 1. 인앱 프로모션 이벤트
  * 2. SNS 콘텐츠 템플릿화
  * 3. UA 비주얼 베리에이션
@@ -144,6 +145,7 @@ export const coverImage = PAGE.p01;
  * 10. 러브스트라이크 OOH
  * 11. AI UGC
  * 12. AI 인플루언서
+ * 13. AI 솔루션 광고소재
  */
 export const portfolioProjects: PortfolioProject[] = [
   {
@@ -298,6 +300,18 @@ export const portfolioProjects: PortfolioProject[] = [
     thumbnail: THUMB.hanna,
     videos: [
       { label: '인스타그램', type: 'instagram-grid', url: 'https://www.instagram.com/hannah.cho.i/' },
+    ],
+  },
+  {
+    id: 'onthe-ai',
+    index: 13,
+    tag: 'AI Solution',
+    title: 'AI 솔루션 광고소재',
+    subtitle: '30분 무료 상담 유도 광고 소재',
+    contribution: '제작 100%',
+    thumbnail: ontheAiThumb,
+    videos: [
+      { label: '온더AI 마케팅소재', type: 'vimeo', url: 'https://vimeo.com/1219764498' },
     ],
   },
 ];
