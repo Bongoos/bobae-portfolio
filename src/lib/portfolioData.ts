@@ -133,59 +133,56 @@ export const coverImage = PAGE.p01;
 
 /*
  * Portfolio Projects — 순서 (13개):
- * 1. 인앱 프로모션 이벤트
- * 2. SNS 콘텐츠 템플릿화
- * 3. UA 비주얼 베리에이션
+ * 1. 네고왕 S4
+ * 2. 견적왕 프로그램 패키지
+ * 3. AI 솔루션 광고소재
  * 4. 오리지널 IP 캐릭터 티징 영상
- * 5. 로고 로컬라이제이션
- * 6. 견적왕 프로그램 패키지
- * 7. 네고왕 S4
+ * 5. UA 비주얼 베리에이션
+ * 6. SNS 콘텐츠 템플릿화
+ * 7. 방구석 투어
  * 8. 오늘도 사랑스럽개
- * 9. 방구석 투어
+ * 9. 로고 로컬라이제이션
  * 10. 러브스트라이크 OOH
- * 11. AI UGC
- * 12. AI 인플루언서
- * 13. AI 솔루션 광고소재
+ * 11. 인앱 프로모션 이벤트
+ * 12. AI UGC
+ * 13. AI 인플루언서
  */
 export const portfolioProjects: PortfolioProject[] = [
   {
-    id: 'coin-event',
+    id: 'negoking',
     index: 1,
-    tag: 'Event',
-    title: '인앱 프로모션 이벤트',
-    subtitle: '1000코인 시즈널 이벤트',
-    contribution: '기획 30% | 제작 100%',
-    thumbnail: THUMB.coin,
-    videos: [
-      { label: '이벤트 페이지', type: 'image', url: ASSETS.asset1 },
-    ],
-  },
-  {
-    id: 'sns-template',
-    index: 2,
-    tag: 'SNS',
-    title: 'SNS 콘텐츠 템플릿화',
-    subtitle: 'SNS 정기 프로모션 콘텐츠 템플릿 제작',
-    contribution: '기획 100% | 제작 100%',
-    thumbnail: THUMB.snsTemplate,
-    videos: [
-      { label: '인생네컷', type: 'instagram-reel', url: 'https://www.instagram.com/reels/DPgJGIcErFd/' },
-      { label: 'IP 홍보 ID', type: 'instagram-reel', url: 'https://www.instagram.com/reels/DNNelYySowO/' },
-    ],
-  },
-  {
-    id: 'ua-variation',
-    index: 3,
-    tag: 'UA Asset',
-    title: 'UA 비주얼 베리에이션',
-    subtitle: 'UA 광고 소재 비주얼 베리에이션',
+    tag: 'Digital',
+    title: '네고왕 S4',
+    subtitle: '신규 시즌 런칭을 위한 프로그램 패키지 리뉴얼',
     contribution: '기획 50% | 제작 100%',
-    thumbnail: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/Gemini_Generated_Image_wbizktwbizktwbiz_1fa504bd.png',
+    thumbnail: THUMB.negoking,
     videos: [
-      { label: 'UA_배너 타입', type: 'video', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/video_KR059P01S01_save_me_latte_kiss_epi_23_25_kr_v_bn_fake(1)_690ad113.mp4' },
-      { label: 'UA_텍스트 타입', type: 'video', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/video_KR059P01S01_save_me_latte_kiss_hilight_05_12_kr_v_bn_fake_txt_2771fa7d.mp4' },
-      { label: 'UA_AI 페이크 인트로 타입', type: 'video', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/15000323_en_vk_dia_0108_hilight_30-33_fake-txt_vk_hilight-03-33_f0fbf2a6.mp4' },
-      { label: 'UA_텍스트 배너 타입', type: 'video', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/15000323_en_vk_dia_0108_hilight_29-34_bn-na_vk_hilight-10-34_cc0d056b.mp4' },
+      { label: '네고왕 S4 오프닝', type: 'vimeo', url: 'https://vimeo.com/808663044' },
+    ],
+  },
+  {
+    id: 'estimaking',
+    index: 2,
+    tag: 'Digital',
+    title: '견적왕 프로그램 패키지',
+    subtitle: '신규 프로그램 런칭을 위한 프로그램 패키지 리뉴얼',
+    contribution: '기획 100% | 제작 100%',
+    thumbnail: THUMB.estimaking,
+    videos: [
+      { label: '견적왕 오프닝 타이틀', type: 'youtube', url: 'https://youtu.be/J9dOifZBIRE?si=SuEi4XlN6RWCBIuI' },
+      { label: '견적왕 프로모션 영상', type: 'vimeo', url: 'https://vimeo.com/808663010' },
+    ],
+  },
+  {
+    id: 'onthe-ai',
+    index: 3,
+    tag: 'AI Solution',
+    title: 'AI 솔루션 광고소재',
+    subtitle: '30분 무료 상담 유도 광고 소재',
+    contribution: '제작 100%',
+    thumbnail: ontheAiThumb,
+    videos: [
+      { label: '온더AI 마케팅소재', type: 'vimeo', url: 'https://vimeo.com/1219764498' },
     ],
   },
   {
@@ -201,42 +198,43 @@ export const portfolioProjects: PortfolioProject[] = [
     ],
   },
   {
-    id: 'logo-localization',
+    id: 'ua-variation',
     index: 5,
-    tag: 'Logo Localization',
-    title: '로고 로컬라이제이션',
-    subtitle: '글로벌 수급 IP 로고 로컬라이제이션',
-    contribution: '기획 80% | 제작 100%',
-    thumbnail: THUMB.logoLocal,
-    videos: [
-      { label: '시크릿 오브 플레이보이', type: 'vimeo', url: 'https://vimeo.com/808663225' },
-      { label: 'LA폭동 그날의 기억', type: 'vimeo', url: 'https://vimeo.com/808663289' },
-      { label: '미국을 만든 기업들 토이', type: 'vimeo', url: 'https://vimeo.com/808663147' },
-    ],
-  },
-  {
-    id: 'estimaking',
-    index: 6,
-    tag: 'Digital',
-    title: '견적왕 프로그램 패키지',
-    subtitle: '신규 프로그램 런칭을 위한 프로그램 패키지 리뉴얼',
-    contribution: '기획 100% | 제작 100%',
-    thumbnail: THUMB.estimaking,
-    videos: [
-      { label: '견적왕 오프닝 타이틀', type: 'youtube', url: 'https://youtu.be/J9dOifZBIRE?si=SuEi4XlN6RWCBIuI' },
-      { label: '견적왕 프로모션 영상', type: 'vimeo', url: 'https://vimeo.com/808663010' },
-    ],
-  },
-  {
-    id: 'negoking',
-    index: 7,
-    tag: 'Digital',
-    title: '네고왕 S4',
-    subtitle: '신규 시즌 런칭을 위한 프로그램 패키지 리뉴얼',
+    tag: 'UA Asset',
+    title: 'UA 비주얼 베리에이션',
+    subtitle: 'UA 광고 소재 비주얼 베리에이션',
     contribution: '기획 50% | 제작 100%',
-    thumbnail: THUMB.negoking,
+    thumbnail: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/Gemini_Generated_Image_wbizktwbizktwbiz_1fa504bd.png',
     videos: [
-      { label: '네고왕 S4 오프닝', type: 'vimeo', url: 'https://vimeo.com/808663044' },
+      { label: 'UA_배너 타입', type: 'video', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/video_KR059P01S01_save_me_latte_kiss_epi_23_25_kr_v_bn_fake(1)_690ad113.mp4' },
+      { label: 'UA_텍스트 타입', type: 'video', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/video_KR059P01S01_save_me_latte_kiss_hilight_05_12_kr_v_bn_fake_txt_2771fa7d.mp4' },
+      { label: 'UA_AI 페이크 인트로 타입', type: 'video', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/15000323_en_vk_dia_0108_hilight_30-33_fake-txt_vk_hilight-03-33_f0fbf2a6.mp4' },
+      { label: 'UA_텍스트 배너 타입', type: 'video', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/15000323_en_vk_dia_0108_hilight_29-34_bn-na_vk_hilight-10-34_cc0d056b.mp4' },
+    ],
+  },
+  {
+    id: 'sns-template',
+    index: 6,
+    tag: 'SNS',
+    title: 'SNS 콘텐츠 템플릿화',
+    subtitle: 'SNS 정기 프로모션 콘텐츠 템플릿 제작',
+    contribution: '기획 100% | 제작 100%',
+    thumbnail: THUMB.snsTemplate,
+    videos: [
+      { label: '인생네컷', type: 'instagram-reel', url: 'https://www.instagram.com/reels/DPgJGIcErFd/' },
+      { label: 'IP 홍보 ID', type: 'instagram-reel', url: 'https://www.instagram.com/reels/DNNelYySowO/' },
+    ],
+  },
+  {
+    id: 'bangguseok-tour',
+    index: 7,
+    tag: 'Channel',
+    title: '방구석 투어',
+    subtitle: '시즌 특집 편성 프로모션 영상 제작',
+    contribution: '기획 100% | 제작 100%',
+    thumbnail: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/promo_9b5a2fa8.jpg',
+    videos: [
+      { label: '방구석 투어 프로모션', type: 'vimeo', url: 'https://vimeo.com/1035085329?fl=pl&fe=sh' },
     ],
   },
   {
@@ -255,15 +253,17 @@ export const portfolioProjects: PortfolioProject[] = [
     ],
   },
   {
-    id: 'bangguseok-tour',
+    id: 'logo-localization',
     index: 9,
-    tag: 'Channel',
-    title: '방구석 투어',
-    subtitle: '시즌 특집 편성 프로모션 영상 제작',
-    contribution: '기획 100% | 제작 100%',
-    thumbnail: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/promo_9b5a2fa8.jpg',
+    tag: 'Logo Localization',
+    title: '로고 로컬라이제이션',
+    subtitle: '글로벌 수급 IP 로고 로컬라이제이션',
+    contribution: '기획 80% | 제작 100%',
+    thumbnail: THUMB.logoLocal,
     videos: [
-      { label: '방구석 투어 프로모션', type: 'vimeo', url: 'https://vimeo.com/1035085329?fl=pl&fe=sh' },
+      { label: '시크릿 오브 플레이보이', type: 'vimeo', url: 'https://vimeo.com/808663225' },
+      { label: 'LA폭동 그날의 기억', type: 'vimeo', url: 'https://vimeo.com/808663289' },
+      { label: '미국을 만든 기업들 토이', type: 'vimeo', url: 'https://vimeo.com/808663147' },
     ],
   },
   {
@@ -279,8 +279,20 @@ export const portfolioProjects: PortfolioProject[] = [
     ],
   },
   {
-    id: 'ai-ugc',
+    id: 'coin-event',
     index: 11,
+    tag: 'Event',
+    title: '인앱 프로모션 이벤트',
+    subtitle: '1000코인 시즈널 이벤트',
+    contribution: '기획 30% | 제작 100%',
+    thumbnail: THUMB.coin,
+    videos: [
+      { label: '이벤트 페이지', type: 'image', url: ASSETS.asset1 },
+    ],
+  },
+  {
+    id: 'ai-ugc',
+    index: 12,
     tag: 'UGC',
     title: 'AI UGC',
     subtitle: '[로맨틱 아일랜드] AI 리액션 영상',
@@ -292,7 +304,7 @@ export const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: 'ai-influencer',
-    index: 12,
+    index: 13,
     tag: 'Influencer',
     title: 'AI 인플루언서',
     subtitle: '오리지널 AI IP 캐릭터 기반 SNS 확장 실험',
@@ -300,18 +312,6 @@ export const portfolioProjects: PortfolioProject[] = [
     thumbnail: THUMB.hanna,
     videos: [
       { label: '인스타그램', type: 'instagram-grid', url: 'https://www.instagram.com/hannah.cho.i/' },
-    ],
-  },
-  {
-    id: 'onthe-ai',
-    index: 13,
-    tag: 'AI Solution',
-    title: 'AI 솔루션 광고소재',
-    subtitle: '30분 무료 상담 유도 광고 소재',
-    contribution: '제작 100%',
-    thumbnail: ontheAiThumb,
-    videos: [
-      { label: '온더AI 마케팅소재', type: 'vimeo', url: 'https://vimeo.com/1219764498' },
     ],
   },
 ];
