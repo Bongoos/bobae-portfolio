@@ -1,5 +1,3 @@
-import klingIcon from '@/assets/kling-icon.png';
-import claudeIcon from '@/assets/claude-icon.png';
 import ontheAiThumb from '@/assets/onthe-ai-thumb.png';
 import bangguseokThumb from '@/assets/bangguseok-thumb.jpg';
 import snsTemplateThumb from '@/assets/sns-template-thumb.jpg';
@@ -26,14 +24,6 @@ export interface CareerItem {
   company: string;
   period: string;
   role: string;
-}
-
-export interface ToolItem {
-  name: string;
-  icon: string;
-  color: string;
-  textColor?: string;
-  iconUrl?: string;
 }
 
 export interface VideoItem {
@@ -95,25 +85,6 @@ export const careerData: CareerItem[] = [
     period: '2017.05.10 ~ 2018.02.20',
     role: '엔터 3팀 디자이너',
   },
-];
-
-// Tools — PDF 2페이지의 아이콘 이미지를 그대로 추출하여 사용
-const TOOL_ICONS = {
-  ai: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/rbiEeMFLjOLYigIs.png',
-  pr: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/PgFnHXdlmjOiJphv.png',
-  ps: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/OQxWBiThfcPfchDn.png',
-  ae: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/RXlntSrkuizOcPHd.png',
-  figma: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/TfiHwvLFxFuRWIGs.png',
-};
-
-export const toolsData: ToolItem[] = [
-  { name: 'Illustrator', icon: 'Ai', color: '#330000', textColor: '#FF9A00', iconUrl: TOOL_ICONS.ai },
-  { name: 'Premiere Pro', icon: 'Pr', color: '#00005B', textColor: '#9999FF', iconUrl: TOOL_ICONS.pr },
-  { name: 'Photoshop', icon: 'Ps', color: '#001E36', textColor: '#31A8FF', iconUrl: TOOL_ICONS.ps },
-  { name: 'After Effects', icon: 'Ae', color: '#00005B', textColor: '#9999FF', iconUrl: TOOL_ICONS.ae },
-  { name: 'Figma', icon: 'Figma', color: '#1E1E1E', textColor: '#FFFFFF', iconUrl: TOOL_ICONS.figma },
-  { name: 'Claude', icon: 'CL', color: '#1A1A1A', textColor: '#FFD700', iconUrl: claudeIcon },
-  { name: 'Kling AI', icon: 'KL', color: '#1A1A1A', textColor: '#FFD700', iconUrl: klingIcon },
 ];
 
 export const coverImage = coverImageLocal;
