@@ -7,13 +7,13 @@ import { useState, useCallback, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import {
   careerData,
-  toolsData,
   coverImage,
   portfolioProjects,
 } from '@/lib/portfolioData';
 import type { PortfolioProject } from '@/lib/portfolioData';
 import PortfolioCard from '@/components/PortfolioCard';
 import ProjectModal from '@/components/ProjectModal';
+import toolsIconStrip from '@/assets/tools-icon-strip.png';
 
 export default function Home() {
   const [selectedProject, setSelectedProject] = useState<PortfolioProject | null>(null);
@@ -108,7 +108,7 @@ export default function Home() {
             </div>
           </motion.div>
 
-          {/* Tools — 좌측 정렬, * 삭제, PDF 추출 이미지 그대로 사용 */}
+          {/* Tools — 좌측 정렬, 통합 이미지 사용 */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -116,29 +116,11 @@ export default function Home() {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <h3 className="text-2xl font-bold text-[#F27920] mb-6">Tools</h3>
-            <div className="flex flex-wrap items-end gap-4">
-              {toolsData.map((tool) => (
-                <div
-                  key={tool.name}
-                  className="flex flex-col items-center"
-                >
-                  {tool.iconUrl ? (
-                    <img
-                      src={tool.iconUrl}
-                      alt={tool.name}
-                      className="h-14 w-auto object-contain"
-                    />
-                  ) : (
-                    <div
-                      className="w-14 h-14 rounded-[10px] flex items-center justify-center font-bold text-lg"
-                      style={{ backgroundColor: tool.color, color: tool.textColor }}
-                    >
-                      {tool.icon}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+            <img
+              src={toolsIconStrip}
+              alt="Tools"
+              className="h-14 w-auto object-contain"
+            />
           </motion.div>
         </div>
       </section>
