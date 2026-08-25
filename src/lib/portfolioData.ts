@@ -1,3 +1,5 @@
+import klingIcon from '@/assets/kling-icon.png';
+import claudeIcon from '@/assets/claude-icon.png';
 import ontheAiThumb from '@/assets/onthe-ai-thumb.png';
 import bangguseokThumb from '@/assets/bangguseok-thumb.jpg';
 import snsTemplateThumb from '@/assets/sns-template-thumb.jpg';
@@ -15,7 +17,6 @@ import uaVariationThumb from '@/assets/ua-variation-thumb.jpg';
 import osagaeThumb from '@/assets/osagae-thumb.jpg';
 import osagaeEventPage from '@/assets/osagae-event-page.jpg';
 import aiInfluencerThumb from '@/assets/ai-influencer-thumb.jpg';
-import claudeIcon from '@/assets/claude-icon.png';
 /*
  * Portfolio Data — 이보배 포트폴리오
  * Design: Editorial Minimalism — Pretendard only
@@ -112,6 +113,7 @@ export const toolsData: ToolItem[] = [
   { name: 'After Effects', icon: 'Ae', color: '#00005B', textColor: '#9999FF', iconUrl: TOOL_ICONS.ae },
   { name: 'Figma', icon: 'Figma', color: '#1E1E1E', textColor: '#FFFFFF', iconUrl: TOOL_ICONS.figma },
   { name: 'Claude', icon: 'CL', color: '#1A1A1A', textColor: '#FFD700', iconUrl: claudeIcon },
+  { name: 'Kling AI', icon: 'KL', color: '#1A1A1A', textColor: '#FFD700', iconUrl: klingIcon },
 ];
 
 export const coverImage = coverImageLocal;
