@@ -1,5 +1,20 @@
 import klingIcon from '@/assets/kling.png';
 import ontheAiThumb from '@/assets/onthe-ai-thumb.png';
+import bangguseokThumb from '@/assets/bangguseok-thumb.jpg';
+import snsTemplateThumb from '@/assets/sns-template-thumb.jpg';
+import logoLocalizationThumb from '@/assets/logo-localization-thumb.png';
+import estimakingThumb from '@/assets/estimaking-thumb.png';
+import aiUgcThumb from '@/assets/ai-ugc-thumb.jpg';
+import lovestrikeOohThumb from '@/assets/lovestrike-ooh-thumb.jpg';
+import coverImageLocal from '@/assets/cover-image.jpg';
+import negokingThumb from '@/assets/negoking-thumb.jpg';
+import osagaeChannelArt from '@/assets/osagae-channel-art.jpg';
+import haemansheThumb from '@/assets/haemanshe-thumb.jpg';
+import coinEventThumb from '@/assets/coin-event-thumb.jpg';
+import uaVariationThumb from '@/assets/ua-variation-thumb.jpg';
+import osagaeThumb from '@/assets/osagae-thumb.jpg';
+import osagaeEventPage from '@/assets/osagae-event-page.jpg';
+import aiInfluencerThumb from '@/assets/ai-influencer-thumb.jpg';
 /*
  * Portfolio Data — 이보배 포트폴리오
  * Design: Editorial Minimalism — Pretendard only
@@ -101,35 +116,7 @@ export const toolsData: ToolItem[] = [
   { name: 'Kling AI', icon: 'KL' , color: '#1A1A1A' , textColor: '#FFD700' , iconUrl: klingIcon },
 ];
 
-// CDN URLs — 기존 썸네일
-const THUMB = {
-  haemanshe: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/RtxKKIWktSmZZsgG.png',
-  coin: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/tuAueSaJdTcjCEja.png',
-  maltese: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/tqgoJgZxFVhYOrUf.png',
-  hanna: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/GZFhqgcBRpxNOYqY.png',
-  negoking: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/SUlBzyOnGXAZUCHG.png',
-  osagae: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/vAEriwYDvpGXvbsY.png',
-  // 새 썸네일
-  snsTemplate: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/sns_template_thumb_0a986d46.png',
-  logoLocal: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/logo_local_thumb_40996bfd.png',
-  estimaking: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/estimaking_thumb_db7750af.png',
-};
-
-const PAGE = {
-  p01: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/gXiCiZthiqnilrqw.png',
-  p02: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/ghWtBVepUJfcnSjS.png',
-  p05: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/iUGdFbiTDWhLUtsA.png',
-  p06: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/mRxlDyGHhRfskIBm.png',
-};
-
-// 새 첨부 이미지 CDN URLs
-const ASSETS = {
-  asset1: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/ekjSooSViNBHVcMI.png',
-  asset2: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/tlNAjoJgAmphHgcM.png',
-  asset3: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/FIVovVXOdULrrzjJ.png',
-};
-
-export const coverImage = PAGE.p01;
+export const coverImage = coverImageLocal;
 
 /*
  * Portfolio Projects — 순서 (13개):
@@ -155,7 +142,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: '네고왕 S4',
     subtitle: '신규 시즌 런칭을 위한 프로그램 패키지 리뉴얼',
     contribution: '기획 50% | 제작 100%',
-    thumbnail: THUMB.negoking,
+    thumbnail: negokingThumb,
     videos: [
       { label: '네고왕 S4 오프닝', type: 'vimeo', url: 'https://vimeo.com/808663044' },
     ],
@@ -167,7 +154,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: '견적왕 프로그램 패키지',
     subtitle: '신규 프로그램 런칭을 위한 프로그램 패키지 리뉴얼',
     contribution: '기획 100% | 제작 100%',
-    thumbnail: THUMB.estimaking,
+    thumbnail: estimakingThumb,
     videos: [
       { label: '견적왕 오프닝 타이틀', type: 'youtube', url: 'https://youtu.be/J9dOifZBIRE?si=SuEi4XlN6RWCBIuI' },
       { label: '견적왕 프로모션 영상', type: 'vimeo', url: 'https://vimeo.com/808663010' },
@@ -192,7 +179,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: '오리지널 IP 캐릭터 티징 영상',
     subtitle: '[해야만 하는 쉐어하우스] 시즌2 프로모션',
     contribution: '기획 30% | 편집, 종편 100%',
-    thumbnail: THUMB.haemanshe,
+    thumbnail: haemansheThumb,
     videos: [
       { label: '인스타그램 릴스', type: 'instagram-reel', url: 'https://www.instagram.com/reels/DOQiKA5knB4/' },
     ],
@@ -204,7 +191,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: 'UA 비주얼 베리에이션',
     subtitle: 'UA 광고 소재 비주얼 베리에이션',
     contribution: '기획 50% | 제작 100%',
-    thumbnail: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/Gemini_Generated_Image_wbizktwbizktwbiz_1fa504bd.png',
+    thumbnail: uaVariationThumb,
     videos: [
       { label: 'UA_배너 타입', type: 'video', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/video_KR059P01S01_save_me_latte_kiss_epi_23_25_kr_v_bn_fake(1)_690ad113.mp4' },
       { label: 'UA_텍스트 타입', type: 'video', url: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/video_KR059P01S01_save_me_latte_kiss_hilight_05_12_kr_v_bn_fake_txt_2771fa7d.mp4' },
@@ -219,7 +206,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: 'SNS 콘텐츠 템플릿화',
     subtitle: 'SNS 정기 프로모션 콘텐츠 템플릿 제작',
     contribution: '기획 100% | 제작 100%',
-    thumbnail: THUMB.snsTemplate,
+    thumbnail: snsTemplateThumb,
     videos: [
       { label: '인생네컷', type: 'instagram-reel', url: 'https://www.instagram.com/reels/DPgJGIcErFd/' },
       { label: 'IP 홍보 ID', type: 'instagram-reel', url: 'https://www.instagram.com/reels/DNNelYySowO/' },
@@ -232,7 +219,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: '방구석 투어',
     subtitle: '시즌 특집 편성 프로모션 영상 제작',
     contribution: '기획 100% | 제작 100%',
-    thumbnail: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/promo_9b5a2fa8.jpg',
+    thumbnail: bangguseokThumb,
     videos: [
       { label: '방구석 투어 프로모션', type: 'vimeo', url: 'https://vimeo.com/1035085329?fl=pl&fe=sh' },
     ],
@@ -244,12 +231,12 @@ export const portfolioProjects: PortfolioProject[] = [
     title: '오늘도 사랑스럽개',
     subtitle: '오리지널 드라마 채널 어셋 구축',
     contribution: '기획 100% | 제작 100%',
-    thumbnail: THUMB.osagae,
+    thumbnail: osagaeThumb,
     videos: [
       { label: '팝업', type: 'vimeo', url: 'https://vimeo.com/1035087086' },
       { label: '연령고지', type: 'vimeo', url: 'https://vimeo.com/1035086960' },
-      { label: '채널아트', type: 'image', url: ASSETS.asset2 },
-      { label: '이벤트 페이지', type: 'image', url: ASSETS.asset3 },
+      { label: '채널아트', type: 'image', url: osagaeChannelArt },
+      { label: '이벤트 페이지', type: 'image', url: osagaeEventPage },
     ],
   },
   {
@@ -259,7 +246,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: '로고 로컬라이제이션',
     subtitle: '글로벌 수급 IP 로고 로컬라이제이션',
     contribution: '기획 80% | 제작 100%',
-    thumbnail: THUMB.logoLocal,
+    thumbnail: logoLocalizationThumb,
     videos: [
       { label: '시크릿 오브 플레이보이', type: 'vimeo', url: 'https://vimeo.com/808663225' },
       { label: 'LA폭동 그날의 기억', type: 'vimeo', url: 'https://vimeo.com/808663289' },
@@ -273,7 +260,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: '러브스트라이크 OOH',
     subtitle: '오리지널 IP 프로모션을 위한 OOH 제작',
     contribution: '기획 50% | 제작 100%',
-    thumbnail: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663355438120/44Ta6fyaP9EgLMR8EoyRh2/OOH_a4844f01.png',
+    thumbnail: lovestrikeOohThumb,
     videos: [
       { label: '러브스트라이크 OOH', type: 'vimeo', url: 'https://vimeo.com/1166565082' },
     ],
@@ -285,9 +272,9 @@ export const portfolioProjects: PortfolioProject[] = [
     title: '인앱 프로모션 이벤트',
     subtitle: '1000코인 시즈널 이벤트',
     contribution: '기획 30% | 제작 100%',
-    thumbnail: THUMB.coin,
+    thumbnail: coinEventThumb,
     videos: [
-      { label: '이벤트 페이지', type: 'image', url: ASSETS.asset1 },
+      { label: '이벤트 페이지', type: 'image', url: coinEventThumb },
     ],
   },
   {
@@ -297,7 +284,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: 'AI UGC',
     subtitle: '[로맨틱 아일랜드] AI 리액션 영상',
     contribution: '기획 100% | 제작 100%',
-    thumbnail: THUMB.maltese,
+    thumbnail: aiUgcThumb,
     videos: [
       { label: 'AI UGC 영상', type: 'vimeo', url: 'https://vimeo.com/1164920222' },
     ],
@@ -309,7 +296,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: 'AI 인플루언서',
     subtitle: '오리지널 AI IP 캐릭터 기반 SNS 확장 실험',
     contribution: '기획 50% | 제작 100%',
-    thumbnail: THUMB.hanna,
+    thumbnail: aiInfluencerThumb,
     videos: [
       { label: '인스타그램', type: 'instagram-grid', url: 'https://www.instagram.com/hannah.cho.i/' },
     ],
