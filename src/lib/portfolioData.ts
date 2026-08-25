@@ -1,4 +1,3 @@
-import klingIcon from '@/assets/kling.png';
 import ontheAiThumb from '@/assets/onthe-ai-thumb.png';
 import bangguseokThumb from '@/assets/bangguseok-thumb.jpg';
 import snsTemplateThumb from '@/assets/sns-template-thumb.jpg';
@@ -11,10 +10,12 @@ import negokingThumb from '@/assets/negoking-thumb.jpg';
 import osagaeChannelArt from '@/assets/osagae-channel-art.jpg';
 import haemansheThumb from '@/assets/haemanshe-thumb.jpg';
 import coinEventThumb from '@/assets/coin-event-thumb.jpg';
+import coinEventPage from '@/assets/coin-event-page.jpg';
 import uaVariationThumb from '@/assets/ua-variation-thumb.jpg';
 import osagaeThumb from '@/assets/osagae-thumb.jpg';
 import osagaeEventPage from '@/assets/osagae-event-page.jpg';
 import aiInfluencerThumb from '@/assets/ai-influencer-thumb.jpg';
+import claudeIcon from '@/assets/claude-icon.png';
 /*
  * Portfolio Data — 이보배 포트폴리오
  * Design: Editorial Minimalism — Pretendard only
@@ -102,8 +103,6 @@ const TOOL_ICONS = {
   ps: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/OQxWBiThfcPfchDn.png',
   ae: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/RXlntSrkuizOcPHd.png',
   figma: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/TfiHwvLFxFuRWIGs.png',
-  nanobanana: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/JKLpHokmmFYOtcvd.png',
-  klingai: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663355438120/VmSKtqFPRLiJwXeN.png',
 };
 
 export const toolsData: ToolItem[] = [
@@ -112,8 +111,7 @@ export const toolsData: ToolItem[] = [
   { name: 'Photoshop', icon: 'Ps', color: '#001E36', textColor: '#31A8FF', iconUrl: TOOL_ICONS.ps },
   { name: 'After Effects', icon: 'Ae', color: '#00005B', textColor: '#9999FF', iconUrl: TOOL_ICONS.ae },
   { name: 'Figma', icon: 'Figma', color: '#1E1E1E', textColor: '#FFFFFF', iconUrl: TOOL_ICONS.figma },
-  { name: 'Nanobanana', icon: 'NB', color: '#1A1A1A', textColor: '#FFD700', iconUrl: TOOL_ICONS.nanobanana },
-  { name: 'Kling AI', icon: 'KL' , color: '#1A1A1A' , textColor: '#FFD700' , iconUrl: klingIcon },
+  { name: 'Claude', icon: 'CL', color: '#1A1A1A', textColor: '#FFD700', iconUrl: claudeIcon },
 ];
 
 export const coverImage = coverImageLocal;
@@ -274,7 +272,7 @@ export const portfolioProjects: PortfolioProject[] = [
     contribution: '기획 30% | 제작 100%',
     thumbnail: coinEventThumb,
     videos: [
-      { label: '이벤트 페이지', type: 'image', url: coinEventThumb },
+      { label: '이벤트 페이지', type: 'image', url: coinEventPage },
     ],
   },
   {
